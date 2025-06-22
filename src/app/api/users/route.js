@@ -1,7 +1,10 @@
 import { readuser, writeuser } from './utils/userstorage';
 import { signToken, verifyToken } from '../utils/jwt';
-
+export const config = {
+    runtime: 'nodejs'
+};
 export async function POST(request) {
+
     try {
         const body = await request.json();
         const { email, name, location, action, password } = body;

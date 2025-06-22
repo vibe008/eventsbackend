@@ -1,6 +1,8 @@
 import { verifyToken } from "../utils/jwt";
 import { writevents, readevents } from "./utils/eventstorage";
-
+export const config = {
+    runtime: 'nodejs'
+};
 export async function POST(request) {
     const body =  request.json();
 
