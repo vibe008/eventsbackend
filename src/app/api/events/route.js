@@ -2,7 +2,7 @@ import { verifyToken } from "../utils/jwt";
 import { writevents, readevents } from "./utils/eventstorage";
 
 export async function POST(request) {
-    const body = await request.json();
+    const body =  request.json();
 
     const { title, description, date, location, action } = body
     
